@@ -8,13 +8,7 @@ class Main {
   }
 
   init() {
-    document.documentElement.classList.add('has-js');
-    console.log('Carousel');
-    const carousel = document.querySelectorAll("[data-component='Carousel']");
-    for (let i = 0; i < carousel.length; i++) {
-      const carous = carousel[i];
-      new Carousel(carous);
-    }
+    
     new ComponentFactory();
 
     Icons.load();

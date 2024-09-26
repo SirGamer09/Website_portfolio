@@ -4,11 +4,13 @@
     padding-bottom: 25px;
     background-color: var(--color-bg-primary);
     background-size: cover;
+    
 }
 
 .footer p {
     color: var(--color-black);
     margin: 0;
+    font-weight: 300;
 }
 
 .sociallink {
@@ -19,7 +21,7 @@
 .logoSocial {
     background-color: white;
     padding: 10px;
-    border-radius: 24px 24px 0 24px;
+    border-radius: 24px 24px 24px 24px;
     display: flex;
     justify-content: center;
 }
@@ -35,8 +37,9 @@
     color: black;
 }
 
-.footer a {
-    color: white;
+.mail{
+    font-weight: 300;
+    letter-spacing: 5px;
 }
 
 .solid {
@@ -56,4 +59,11 @@
 
 .logoSocial:hover {
     background-color: #d72638;
+}
+
+.credits{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }

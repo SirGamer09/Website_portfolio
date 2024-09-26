@@ -9,7 +9,11 @@
     --font-size-content: #{typo(16px, 38px)};
 
     /// Grosseur des textes
+    --font-size-tags-projets: #{typo(10px, 25px)};
     --font-size-nav: #{typo(15px, 32px)};
     --font-size-cta: #{typo(12px, 32px)};
     --font-size-h1: #{typo(40px, 85px)};
+    --font-size-h2: #{typo(40px, 85px)};
+    --font-size-h4: #{typo(18px, 48px)};
+    --font-size-hero: #{typo(60px, 150px)};
 }
