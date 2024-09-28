@@ -39,5 +39,24 @@
     right: -50px; /* Ajuste cette valeur selon ton besoin */
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
+}
+
+.form__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_mail {
+    border-radius: 593.458px;
+    border: 1.323px solid #000;
+    display: flex;
+    width: 192px;
+    height: 192px;
+    padding: 78.391px 21.586px;
+    justify-content: center;
+    align-items: center;
+    gap: 7.515px;
+    flex-shrink: 0;
+    font-size: var(--font-size-tags-projets);
 }

@@ -1,11 +1,11 @@
-
-import Header from "./Header";
-export default class ComponentFactory{
-    constructor() {
-        this.componentList = {
-            Header,
-        };
-
+import Header from './Header';
+import Form from './Form';
+export default class ComponentFactory {
+  constructor() {
+    this.componentList = {
+      Header,
+      Form,
+    };
 
     this.init();
   }
@@ -18,22 +18,13 @@ export default class ComponentFactory{
       const element = components[i];
       const componentName = element.dataset.component;
 
-
-        if (this.componentList[componentName]){
-            new this.componentList[componentName](element);
-        }
-
-        else{
-            console.log(`la composante ${componentName} n'existe pas`);
-        }
-        
+      if (this.componentList[componentName]) {
+        new this.componentList[componentName](element);
+      } else {
+        console.log(`la composante ${componentName} n'existe pas`);
+      }
     }
 
-  
     // Chargement du sprite svg par le système d'icône
-    
   }
 }
-
-
-  
