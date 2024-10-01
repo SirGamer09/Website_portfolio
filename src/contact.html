@@ -5,8 +5,67 @@
         <div class="grid-contactez-moi">
             <div class="zone_formulaire">
                 <h2>Créons ensemble !</h2>
-                <div class="projets__media">
-                    <img src="assets/images/background-sect_projets.png" alt="background-projets" />
+
+                <div class="formulaire">
+                    <div class="infos-perso" data-scrolly="fromLeft">
+                        <form action="" class="form form-gauche" autocomplete="off" data-component="Form">
+                            <div class="grid-formulaire-collumn">
+                                <div class="left">
+                                    <div class="input">
+                                        <label class="input__label" for="firstname">Votre prénom</label>
+                                        <input
+                                            class="input__element"
+                                            type="text"
+                                            name="firstname"
+                                            id="firstname"
+                                            placeholder="Ex: votre prénom"
+                                            required
+                                        />
+                                        <span class="message-erreur">Remplir ce champ</span>
+                                    </div>
+
+                                    <div class="input">
+                                        <label class="input__label" for="name">Votre nom</label>
+                                        <input
+                                            class="input__element"
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            placeholder="Ex: votre nom"
+                                            required
+                                        />
+                                        <span class="message-erreur">Remplir ce champ</span>
+                                    </div>
+
+                                    <div class="input">
+                                        <label class="input__label" for="email">Votre courriel</label>
+                                        <input
+                                            class="input__element"
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            placeholder="Ex: courriel@gmail.com"
+                                            required
+                                        />
+                                        <span class="message-erreur">Remplir ce champ</span>
+                                    </div>
+                                </div>
+
+                                <div class="input textarea">
+                                    <label class="input__label" for="comment">Commentaire :</label>
+                                    <textarea class="input__element" name="comment" id="comment"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form__footer">
+                                <button class="btn btn_mail boutton" href="">Envoyez</button>
+                            </div>
+
+                            <div class="form__confirmation">
+                                <h3>Votre formulaire à bien été envoyé !</h3>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="contact">
                     <article class="phone">
@@ -24,9 +83,6 @@
                     </article>
                 </div>
             </div>
-        </div>
-        <div class="voirprojets">
-            <a class="btn btn_mail" href="">Travaillons ensemble !</a>
         </div>
     </div>
 </section>
