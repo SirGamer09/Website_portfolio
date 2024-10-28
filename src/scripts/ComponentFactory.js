@@ -1,6 +1,6 @@
 import Header from './Header';
-import Form from './Form';
-import Scrolly from "./components/Scrolly";
+import FormMail from './FormMail';
+import Scrolly from './components/Scrolly';
 import YouTube from './components/Youtube';
 import Toggle from './components/Toggle';
 
@@ -8,7 +8,7 @@ export default class ComponentFactory {
   constructor() {
     this.componentList = {
       Header,
-      Form,
+      FormMail,
       Scrolly,
       YouTube,
     };

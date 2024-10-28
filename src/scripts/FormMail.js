@@ -1,4 +1,4 @@
-export default class Form {
+export default class FormMail {
   /**
    * @param {HTMLFormElement} element
    */
@@ -30,8 +30,18 @@ export default class Form {
     if (this.validate()) {
       console.log('Form submission successful');
       this.showConfirmation();
+      const formData = new FormData(this.element);
+
+      fetch('https://formspree.io/f/xovqjnpn', {
+        // Remplace par ton Form ID
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+        },
+        body: formData,
+      });
     } else {
-      console.log('Form validation failed');
+      console.log(' formulaire marche pas ');
     }
   }
 
