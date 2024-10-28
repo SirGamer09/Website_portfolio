@@ -1,10 +1,16 @@
 import Header from './Header';
 import Form from './Form';
+import Scrolly from "./components/Scrolly";
+import YouTube from './components/Youtube';
+import Toggle from './components/Toggle';
+
 export default class ComponentFactory {
   constructor() {
     this.componentList = {
       Header,
       Form,
+      Scrolly,
+      YouTube,
     };
 
     this.init();
@@ -21,10 +27,11 @@ export default class ComponentFactory {
       if (this.componentList[componentName]) {
         new this.componentList[componentName](element);
       } else {
-        console.log(`la composante ${componentName} n'existe pas`);
+        console.log(`La composante ${componentName} n'existe pas`);
       }
     }
 
-    // Chargement du sprite svg par le système d'icône
+    // Instancier Toggle pour le comportement de bascule
+    new Toggle();
   }
 }

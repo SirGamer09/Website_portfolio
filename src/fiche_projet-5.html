@@ -1,0 +1,205 @@
+{% include '_partials/_header.html' %}
+<section class="fiche-projet">
+    <div class="wrapper">
+        <section class="summary">
+            <div class="summary-content">
+                <div class="projet-media">
+                    <img src="assets/images/card-projet-5-hero.png" alt="card-1" />
+                </div>
+                <div class="sumarry-side-left">
+                    <h1>Zombie Attaque - résumé</h1>
+                    <p>
+                        Zombie Attaque est un projet étudiant réalisé dans le cours de jeu-vidéo 2 à
+                        <span>l’hiver 2022</span>. Ce projet a été réalisé grâce à <span>Unity </span> pour la scène,
+                        les éléments 3D et les éléments de gameplay.
+                        <br />
+                        <br />
+                        Ce projet mets en avant mes compétences en développement de jeu-vidéo comme le
+                        <span>level design</span> , le design du gameplay ainsi que mes capacitées à
+                        <span>programmer en C#</span> pour les scripts du jeu.
+                    </p>
+                    <div class="logiciels">
+                        <p>Logiciel utilisé :</p>
+                        <img src="assets/icons/unity.svg" alt="blender" />
+                    </div>
+                    <div class="credit">
+                        <p>Réalisé par : <span>Justin Valois</span></p>
+                        <p>Effets sonores de : <span>Soudsnap et pixabay</span></p>
+                        <p>Assets de : <span>Moi et Unity Assets Store</span></p>
+                        <p>Musique de : <span>Librairie Pixabay</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="a-decouvrir">
+            <div class="video-projet">
+                <div class="video video-1" data-component="YouTube" data-video-id="DUdePqB4_qo" data-scrolly="fromLeft">
+                    <div class="video__media js-video">
+                        <img class="js-poster" src="assets/images/video-1.jpg" alt="spectacle de musique" />
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-icone-video"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="etape-1">
+            <div class="etape-1-content">
+                <h1>1- Idéation</h1>
+                <p>
+                    Pour commencer, je devais trouver une idée de jeu et de gameplay en lien avec l’environnement. J’ai
+                    eu l’idée que le joueur doit ramasser des objets dans un village de style médiéval avec un système
+                    de points. <br />
+                    <br />Le joueur sera poursuivi par un zombie de la pollution, et devra nettoyer le village pour
+                    gagner. Si le zombie touche le joueur, celui-ci perd 1 cœur de vie, avec un total de 5 cœurs. Si le
+                    joueur perd ses 5 vies, il doit recommencer le jeu.
+                </p>
+                <div class="modelisation">
+                    <h4>Points clés du jeu</h4>
+                    <ul>
+                        <li>Système de pointage</li>
+                        <li>Objets à ramasser</li>
+                        <li>Poursuivi par un zombie</li>
+                        <li>Système de points de vie</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="etape-2">
+            <div class="etape-1-content">
+                <h1>2- Création de l'environnement</h1>
+                <p>
+                    J'ai créé mon environnement en m'inspirant de villages médiévaux en utilisant des assets libres de
+                    droits sur le Unity Assets Store. Nous pouvons donc retrouver des bâtiments cohérents à cette époque
+                    comme un moulin, un puit, des maisons en bois et un sol en terre. <br />
+                    <br />
+                    Pour rester dans le thème de la protection de l'environnement, j'ai ajouté des items comme de la
+                    nourriture et des armes pour rester cohérent avec l'époque du jeu. Tous ces items donnent des points
+                    au joueur, mais s'il se fait toucher par le zombie, il perd des points en plus d'un coeur de vie.
+                </p>
+
+                <div class="summary-side-right summary-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/projet-5-model-1.jpg" alt="summaryimg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/projet-5-model-2.jpg" alt="summaryimg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/projet-5-model-3.jpg" alt="summaryimg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/projet-5-model-4.jpg" alt="summaryimg" />
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="etape-3">
+            <div class="etape-1-content">
+                <h1>3- Programmation</h1>
+                <p>
+                    J'ai programmé les déplacements du joueur, l'interface utilisateur en jeu et mis en place le système
+                    de points et de vie. De plus, j'ai programmé le compte à rebours et le système de pointage. <br />
+                    <br />
+                    J'ai égallement programmé les attaques du zombie qui enlève des points de vie au joueur, programmé
+                    un interface de victoire et de défaite. Pour finir, j'ai programmé un menu qui permet au joueur de
+                    régler le volume de la musique et des SFX.
+                </p>
+
+                <div class="summary-side-right summary-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/projet-5-prog-1.jpg" alt="summaryimg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/projet-5-prog-2.jpg" alt="summaryimg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/projet-5-prog-3.jpg" alt="summaryimg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/projet-5-prog-4.jpg" alt="summaryimg" />
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="etape-4">
+            <div class="etape-1-content">
+                <h1>4- Animations et SFX</h1>
+                <p>
+                    Pour rendre offrir une expérience immersive au joueur, j'ai ajouté des sons réalistes comme une
+                    foule en panique, des bruits de grognement pour le zombie et une musique opressante pour simuler un
+                    gameplay immersif. <br />
+                    <br />
+                    De plus, j'ai animé le zombie pour qu'il ait une animation de marche lorsqu'il chasse le joueur et
+                    une autre animation lorsqu'il attaque le joueur. J'ai égallement animé les objets à rammasser avec
+                    des animations simplistes pour bien les mettres en évidences pour eviter qu'ils se fondent dans
+                    l'environnement et que le joueur ne les trouve pas.
+                </p>
+
+                <div class="summary-side-right summary-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/projet-5-anim-1.jpg" alt="summaryimg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/projet-5-anim-2.jpg" alt="summaryimg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/projet-5-anim-3.jpg" alt="summaryimg" />
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="boutton-projet-suivant">
+                <a
+                    class="cta cta-suivant"
+                    href="fiche_projet-1.html"
+                    title="Continue Reading"
+                    data-swiper-parallax="80"
+                    data-swiper-parallax-opacity="0.2"
+                    data-swiper-parallax-duration="1750"
+                >
+                    Projet suivant
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-arrow-right-short"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </div>
+</section>
+
+<section class="video-presentation">
+    <div class="wrapper">
+        <div class="credit-footer">
+            <p>2024 Valois Justin © Tous droits réservés</p>
+        </div>
+    </div>
+</section>
+
+{% include '_partials/_footer.html' %}

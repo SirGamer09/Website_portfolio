@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Justin Valois</title>
-       
-        <link rel="stylesheet" href="styles/main.css" />
-        
+<head>
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Justin Valois</title>
+   
+    <link rel="stylesheet" href="styles/main.css" />
 
-        <script src="scripts/main.js" defer></script>
-        
-    </head>
 
-    <body>
-        <!-- HERO -->
-        <header class="header header-recette" data-component="Header" data-threshold>
-            <div class="wrapper">
-              <a href="index.html" class="logo header__brand" >
-                J <span class="logo-bend">V</span>
-              </a>
-              <nav class="nav-primary">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+</head>
+
+<body data-component="Scrolly" data-no-repeat>
+    <!-- HERO -->
+    <header class="header" data-component="Header" >
+        <div class="wrapper">
+            <a class="logo header__brand" href="index.html">
+                <svg class="icon icon--lg">
+                    <use xlink:href="#icon-logo"></use>
+                </svg>
+            </a>
+
+            <nav class="nav-primary">
                 <ul>
-                  <a class="nav--item" href="index.html"><li>Accueil</li></a>
-                  <a class="nav--item" href="projets.html"><li>Mes projets</li></a>
-                  <a class="nav--item" href="apropos.html"><li>À propos</li></a>
-                  <a class="nav--item" href="contact.html"><li>Contactez-moi !</li></a>
+                    <li><a class="nav--item" href="index.html">Accueil</a></li>
+                    <li><a class="nav--item" href="projets.html">Mes projets</a></li>
+                    <li><a class="nav--item" href="contact.html">Contactez-moi !</a></li>
                 </ul>
-              </nav>
+            </nav>
+
+            <div class="toggle-container js-toggle ">
+                <button class="header__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <button class="header__toggle js-toggle">
-              <span></span>
-              <span></span>
-              <span></span>
-          </button>
-          </header>
-
-
-
-        
+        </div>
+    </header>
+</body>
+</html>

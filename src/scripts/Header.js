@@ -20,8 +20,7 @@ export default class Header {
     setOptions() {}
   
     onScroll() {
-      this.lastScrollPosition = this.scrollPosition;
-      this.scrollPosition = document.scrollingElement.scrollTop;
+     
   
       this.setHeaderState();
       this.setDirections();

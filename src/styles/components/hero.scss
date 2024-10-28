@@ -1,21 +1,22 @@
 .hero {
+    margin-top: 200px;
+    margin-bottom: 100px;
     position: relative;
 }
 
-.hero__media {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    filter: brightness(65%);
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+.hero_container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+    @media screen and (max-width: $breakpoint-md) {
+        grid-template-columns: 1fr;
     }
-    &:hover {
+    @media screen and (max-width: $breakpoint-sm) {
+        grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -27,25 +28,94 @@
 }
 
 .hero__content {
-    position: relative;
-    height: 90vh;
+    height: 100%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
 
     flex-direction: column;
-    color: var(--color-primary);
+
     font-family: var(--font-secondary);
+    padding: 30px 0;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        align-items: center;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        align-items: center;
+    }
+}
+
+.name {
+    margin-left: 80px;
 }
 
 .hero__content h1 {
     margin: 0;
-    letter-spacing: 10px;
     font-size: var(--font-size-hero);
+    overflow: hidden;
+    transform: translateX(-125%); /* Start hidden to the left */
+    animation: slideIn 0.8s ease-out forwards; /* Smooth slide-in */
 }
 
-.hero__content p {
+.name {
+    margin-left: 80px;
+    display: inline-block;
+    transform: translateX(-100%); /* Start hidden to the left */
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards; /* Smooth slide-in */
+}
+
+/* Slide-in from left */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--color-primary); /* Smaller cursor */
+    width: 0; /* Start with no width */
+    animation: typewriter 2s steps(25, end) forwards,
+        blink 0.5s step-end infinite;
     font-weight: 300;
+    padding-top: 100px;
+    padding-bottom: 30px;
     margin: 0;
+    font-family: var(--font-secondary);
+
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: var(--font-size-content);
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        font-size: var(--font-size-content);
+    }
+}
+
+/* Keyframes for typing effect */
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Keyframes for blinking cursor */
+@keyframes blink {
+    0% {
+        border-color: transparent;
+    }
 }

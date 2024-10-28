@@ -1,76 +1,212 @@
-.btn {
+.cta {
+    border-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
     color: white;
-    background: linear-gradient(
-        135deg,
-        #ff7eb9,
-        #ff758c,
-        #ff6f91
-    ); /* Dégradé vibrant */
-    margin-top: 20px;
-    padding: 15px 40px; /* Taille du bouton */
-    border: none;
-    border-radius: 50px; /* Bordure arrondie */
-    font-size: 1.2rem; /* Taille de la police */
-    font-weight: bold;
-    text-transform: uppercase; /* Mettre le texte en majuscules */
-    cursor: pointer;
-    transition: all 0.3s ease; /* Transition pour l'animation */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 5px;
+    transition: all 0.6s ease !important;
+    cursor: url('../assets/cursor/custom-cursor.png') 32 32, auto;
+    border: solid white 2px;
+}
+.cta:hover {
     position: relative;
-    overflow: hidden; /* Masquer les animations qui sortent */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 5px;
+    transition: all 0.6s ease !important;
 }
 
-/* Effet de survol */
-.btn:hover {
-    background: linear-gradient(
-        135deg,
-        #ff758c,
-        #ff6f91,
-        #ff85a9
-    ); /* Couleurs du dégradé changent légèrement au survol */
-    color: var(--color-secondary);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Augmentation de l'ombre pour un effet de profondeur */
-    transform: scale(1.05); /* Légère augmentation de taille au survol */
-    overflow: hidden; /* Masquer les animations qui sortent */
-}
-
-/* Ajout d'un effet d'animation au survol */
-.btn::before {
-    content: '';
+.cta::after {
     position: absolute;
-    top: 50%;
-    left: 50%;
-
-    background: rgba(255, 255, 255, 0.3); /* Un léger halo blanc au survol */
-    transition: all 0.6s ease;
-    transform: translate(-50%, -50%) scale(0);
-    border-radius: 50%;
-    overflow: hidden; /* Masquer les animations qui sortent */
-}
-
-.btn:hover::before {
-    transform: translate(-50%, -50%) scale(1); /* Animation d'onde circulaire au survol */
-}
-
-/* Animation de texte à l'intérieur */
-.btn span {
-    position: relative;
-    z-index: 2;
-}
-
-.btn::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
+    right: 100%;
+    bottom: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2); /* Effet lumineux qui glisse */
-    transition: all 0.5s ease;
+    background-color: var(--color-primary);
+    content: '';
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.cta:hover::after {
+    right: 0;
+    transition: all 0.6s ease;
+}
+.cta svg {
+    width: 23px;
+    height: auto;
+    fill: white;
+    margin-left: 5px;
+    transition: all 0.6s ease;
+}
+.cta:hover svg {
+    margin-left: 5px;
+    fill: black;
+    transition: all 0.6s ease;
 }
 
-.btn:hover::after {
-    left: 100%; /* Animation glissante de gauche à droite au survol */
+.cta-video {
+    border-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 5px;
+    transition: all 0.6s ease !important;
+    cursor: url('../assets/cursor/custom-cursor.png') 32 32, auto;
+    border: solid white 2px;
+}
+.cta-video:hover {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 5px;
+    transition: all 0.6s ease !important;
 }
 
+.cta-video::after {
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+    content: '';
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.cta-video:hover::after {
+    right: 0;
+    transition: all 0.6s ease;
+}
+.cta-video svg {
+    width: 23px;
+    height: auto;
+    fill: white;
+    margin-left: 5px;
+    transition: all 0.6s ease;
+}
+.cta-video:hover svg {
+    margin-left: 5px;
+    fill: black;
+    transition: all 0.6s ease;
+}
 
+/* Bouton suivant avec un espacement correct */
+.boutton-suivant {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 30px;
+    @media screen and (max-width: $breakpoint-sm) {
+        justify-content: flex-start;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        justify-content: flex-start;
+    }
+}
+
+.boutton-video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    @media screen and (max-width: $breakpoint-sm) {
+        justify-content: flex-start;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        justify-content: flex-start;
+    }
+}
+
+.boutton-projet {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @media screen and (max-width: $breakpoint-sm) {
+        justify-content: flex-start;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        justify-content: flex-start;
+    }
+}
+
+.boutton-hero {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateX(-125%); /* Start hidden to the left */
+    animation: slideIn 0.8s ease-out forwards; /* Smooth slide-in */
+    @media screen and (max-width: $breakpoint-sm) {
+        justify-content: flex-start;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        justify-content: flex-start;
+    }
+}
+
+.boutton-projet-suivant {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    @media screen and (max-width: $breakpoint-sm) {
+        justify-content: flex-start;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        justify-content: flex-start;
+    }
+}
+
+.submit-btn {
+    border-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 5px;
+    transition: all 0.6s ease !important;
+    cursor: url('../assets/cursor/custom-cursor.png') 32 32, auto;
+    border: solid white 2px;
+}

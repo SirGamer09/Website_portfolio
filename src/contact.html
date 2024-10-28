@@ -1,88 +1,80 @@
 {% include '_partials/_header.html' %}
 
-<section class="mailme">
+<section class="contact-section">
     <div class="wrapper">
-        <div class="grid-contactez-moi">
-            <div class="zone_formulaire">
-                <h2>Créons ensemble !</h2>
+        <h2>
+            <span class="form-title">Tu es</span> <br />
+            intéressé ?
+        </h2>
+        <form
+            action="https://formsubmit.co/justin.x.valois@gmail.com"
+            method="POST"
+            class="contact-form"
+            autocomplete="off"
+            data-component="Form"
+        >
+            <input type="hidden" name="_next" value="https://justinvalois.com/form/" />
+            <input type="hidden" name="_captcha" value="false" />
+            <div class="form-group">
+                <label for="name">Nom *</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Courriel *</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="subject">Sujet *</label>
+                <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn cta cta-form">
+                Envoyer
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-short"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                    />
+                </svg>
+            </button>
+        </form>
 
-                <div class="formulaire">
-                    <div class="infos-perso" data-scrolly="fromLeft">
-                        <form action="" class="form form-gauche" autocomplete="off" data-component="Form">
-                            <div class="grid-formulaire-collumn">
-                                <div class="left">
-                                    <div class="input">
-                                        <label class="input__label" for="firstname">Votre prénom</label>
-                                        <input
-                                            class="input__element"
-                                            type="text"
-                                            name="firstname"
-                                            id="firstname"
-                                            placeholder="Ex: votre prénom"
-                                            required
-                                        />
-                                        <span class="message-erreur">Remplir ce champ</span>
-                                    </div>
-
-                                    <div class="input">
-                                        <label class="input__label" for="name">Votre nom</label>
-                                        <input
-                                            class="input__element"
-                                            type="text"
-                                            name="name"
-                                            id="name"
-                                            placeholder="Ex: votre nom"
-                                            required
-                                        />
-                                        <span class="message-erreur">Remplir ce champ</span>
-                                    </div>
-
-                                    <div class="input">
-                                        <label class="input__label" for="email">Votre courriel</label>
-                                        <input
-                                            class="input__element"
-                                            type="email"
-                                            name="email"
-                                            id="email"
-                                            placeholder="Ex: courriel@gmail.com"
-                                            required
-                                        />
-                                        <span class="message-erreur">Remplir ce champ</span>
-                                    </div>
-                                </div>
-
-                                <div class="input textarea">
-                                    <label class="input__label" for="comment">Commentaire :</label>
-                                    <textarea class="input__element" name="comment" id="comment"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form__footer">
-                                <button class="btn btn_mail boutton" href="">Envoyez</button>
-                            </div>
-
-                            <div class="form__confirmation">
-                                <h3>Votre formulaire à bien été envoyé !</h3>
-                            </div>
-                        </form>
-                    </div>
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+            <h3>Je suis joignable par</h3>
+            <div class="contact-methods">
+                <div class="contact-item">
+                    <img src="assets/icons/telephone.svg" alt="Phone Icon" />
+                    <a href="tel:438-836-2608">438-836-2608</a>
                 </div>
-                <div class="contact">
-                    <article class="phone">
-                        <img src="assets/icons/telephone.svg" alt="phone" />
-                        <a href="">438-836-2608</a>
-                    </article>
-                    <article class="courriel">
-                        <img src="assets/icons/mail.svg" alt="mail" />
-                        <a class="mail" href="index.html"> justinvalois.creative@gmail.com </a>
-                    </article>
-
-                    <article class="cv">
-                        <img src="assets/icons/cv.svg" alt="cv" />
-                        <a href="">Téléchargez mon CV !</a>
-                    </article>
+                <div class="contact-item">
+                    <img src="assets/icons/mail.svg" alt="Email Icon" />
+                    <a href="mailto:justinvalois.creative@gmail.com">justinvalois.creative@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <img src="assets/icons/cv.svg" alt="CV Icon" />
+                    <a href="assets/files/CV-Justin.pdf" download>Mon CV</a>
                 </div>
             </div>
+        </div>
+        <!-- End of Contact Information Section -->
+    </div>
+</section>
+
+<section class="video-presentation">
+    <div class="wrapper">
+        <div class="credit-footer">
+            <p>2024 Valois Justin © Tous droits réservés</p>
         </div>
     </div>
 </section>

@@ -3,18 +3,18 @@
    ========================================================================== */
 /// Font family
 :root {
-    --font-primary: 'Ranchers', sans-serif;
-    --font-secondary: 'Assistant', sans-serif;
+    --font-primary: 'Expletus Sans', sans-serif;
+    --font-secondary: 'Raleway', sans-serif;
 
-    --font-size-content: #{typo(16px, 38px)};
+    --font-size-content: #{typo(12px, 20px)};
 
     /// Grosseur des textes
     --font-size-tags-projets: #{typo(10px, 25px)};
     --font-size-nav: #{typo(15px, 32px)};
     --font-size-cta: #{typo(12px, 32px)};
-    --font-size-h1: #{typo(40px, 85px)};
+    --font-size-h1: #{typo(30px, 85px)};
     --font-size-h2: #{typo(40px, 85px)};
     --font-size-h3: #{typo(30px, 60px)};
-    --font-size-h4: #{typo(18px, 48px)};
-    --font-size-hero: #{typo(60px, 150px)};
+    --font-size-h4: #{typo(18px, 28px)};
+    --font-size-hero: #{typo(50px, 150px)};
 }

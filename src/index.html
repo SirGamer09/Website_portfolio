@@ -1,18 +1,245 @@
 {% include '_partials/_header.html' %}
 
+<div id="tsparticles">
+    <canvas></canvas>
+</div>
+
 <section class="hero">
     <div class="wrapper">
-        <div class="hero__media">
-            <img src="assets/images/demoreel_placeholder.png" alt="demoreel" />
+        <div class="hero_container">
+            <div class="hero__content">
+                <h1>
+                    Justin <br />
+                    <span class="name">Valois</span>
+                </h1>
+
+                <p class="typewriter">Développeur front-end junior / créateur média</p>
+                <div class="boutton-hero">
+                    <a
+                        class="cta cta-projet"
+                        href="projets.html"
+                        title="Continue Reading"
+                        data-swiper-parallax="80"
+                        data-swiper-parallax-opacity="0.2"
+                        data-swiper-parallax-duration="1750"
+                    >
+                        Voir mes projets
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-right-short"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="hero__content">
-            <h1>Justin Valois</h1>
-            <p>
-                Intégrateur web et <br />
-                modélisateur 3D
+    </div>
+</section>
+
+<section class="a-decouvrir">
+    <div class="wrapper">
+        <div class="video-projet">
+            <div class="video video-1" data-component="YouTube" data-video-id="TEM0iap8DCY" data-scrolly="fromLeft">
+                <div class="video__media js-video"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="presentation">
+    <div class="wrapper">
+        <div class="presentation-moi">
+            <div class="presentation-content">
+                <p class="description" data-scrolly="fromLeft">
+                    Ancien étudiant en comptabilité, j’ai décidé de tout lâcher pour suivre
+                    <span>ma passion</span> : <span>le multimédia</span>.
+                </p>
+            </div>
+            <div class="boutton-video">
+                <a
+                    target="_blank"
+                    class="cta-video"
+                    href="https://youtu.be/kqVw-Du1JEs"
+                    title="Continue Reading"
+                    data-swiper-parallax="80"
+                    data-swiper-parallax-opacity="0.2"
+                    data-swiper-parallax-duration="1750"
+                >
+                    Vidéo de présentation
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-arrow-right-short"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="wrapper">
+        <div class="presentation-media" data-scrolly="fromLeft">
+            <img class="img-hover" src="assets/images/profil_image.jpeg" alt="photoprofil" />
+        </div>
+        <div class="passions" data-scrolly="fromRight">
+            <h3 class="apropos-title">
+                Salut ! <br />
+                Moi c'est <span class="cascade-text-span">Justin Valois</span>
+            </h3>
+
+            <p class="apropos-content">
+                Je suis un futur finissant de la technique d'intégration multimédia à la recherche d'un stage pour
+                <span>l'hiver 2025.</span>
+                <br />
+                <br />
+
+                Je suis un passionné de <span>jeux-vidéo </span>, de <span>voitures </span>,
+                <span>d'exploration urbaine </span> et de <span>cinéma </span>. Je me considère comme étant fiable,
+                proactif, créatif et très motivé. Ma grande <span>soif d'apprendre </span> est ce qui me motive à
+                aigusier mes compétences en web et en création multimédia. <br />
+                <br />
+                <span class="highlight">J'adore l'intégration web et la creation de média 3D.</span>
             </p>
-            
-            <img class="fleche-cta" src="assets/icons/fleche-CTA.svg" alt="cta-fleche" />
+        </div>
+    </div>
+</div>
+
+<section class="personnaliter">
+    <div class="wrapper">
+        <h1 class="cascade-text">Je suis ...</h1>
+        <div class="personnaliter-content">
+            <div class="personnalite-item">Proactif</div>
+            <div class="personnalite-item">Fiable</div>
+            <div class="personnalite-item">Créatif</div>
+            <div class="personnalite-item">Motivé</div>
+        </div>
+    </div>
+</section>
+
+<section class="outils" data-scrolly="fadeIn">
+    <div class="wrapper">
+        <div class="outils-container outils-container-1" data-scrolly="fromRight">
+            <h1>Mes compétences</h1>
+            <div class="personnaliter-content btn-click btn-click-1">
+                <div class="personnalite-item">Clique-moi !</div>
+            </div>
+            <div class="flexbox-container">
+                <article class="flexbox">
+                    <img src="assets/icons/3d.svg" alt="html" />
+                    <p>Animation 3D</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/front-end.svg" alt="css" />
+                    <p>Développement front-end</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/games.svg" alt="javascript" />
+                    <p>Développement en jeux-vidéo</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/integration.svg" alt="csharp" />
+                    <p>Intégration web</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/design.svg" alt="php" />
+                    <p>Design web</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/video.svg" alt="php" />
+                    <p>Montage vidéo</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="outils-container outils-container-2" data-scrolly="fromRight">
+            <h1>Mes languages</h1>
+            <div class="personnaliter-content btn-click btn-click-2">
+                <div class="personnalite-item">Clique-moi !</div>
+            </div>
+            <div class="flexbox-container">
+                <article class="flexbox">
+                    <img src="assets/icons/html.svg" alt="html" />
+                    <p>Html</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/css.svg" alt="css" />
+                    <p>Css</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/javascript.svg" alt="javascript" />
+                    <p>Javascript</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/csharp.svg" alt="csharp" />
+                    <p>C-Sharp</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/php.svg" alt="php" />
+                    <p>Php</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/python.svg" alt="php" />
+                    <p>Python</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="outils-container outils-container-3" data-scrolly="fromRight">
+            <h1>Mes logiciels</h1>
+            <div class="personnaliter-content btn-click btn-click-3">
+                <div class="personnalite-item">Clique-moi !</div>
+            </div>
+            <div class="flexbox-container">
+                <article class="flexbox">
+                    <img src="assets/icons/unity.svg" alt="unity" />
+                    <p>Unity</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/vscode.svg" alt="vscode" />
+                    <p>VsCode</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/blender.svg" alt="blender" />
+                    <p>Blender</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/figma.svg" alt="Figma" />
+                    <p>Figma</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/photoshop.svg" alt="photoshop" />
+                    <p>Photoshop</p>
+                </article>
+                <article class="flexbox">
+                    <img src="assets/icons/aftereffects.svg" alt="aftereffects" />
+                    <p>After Effects</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="video-presentation">
+    <div class="wrapper">
+        <div class="credit-footer">
+            <p>2024 Valois Justin © Tous droits réservés</p>
         </div>
     </div>
 </section>

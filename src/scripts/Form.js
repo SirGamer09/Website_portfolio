@@ -1,9 +1,7 @@
 export default class Form {
   /**
-   *
-   * @param {HTMLElement} element
+   * @param {HTMLFormElement} element
    */
-
   constructor(element) {
     this.element = element;
     this.formElements = this.element.elements;
@@ -11,8 +9,10 @@ export default class Form {
   }
 
   init() {
+    // Disable the default HTML5 validation
     this.element.setAttribute('novalidate', '');
 
+    // Add input event listeners for validation
     for (let i = 0; i < this.formElements.length; i++) {
       const input = this.formElements[i];
       if (input.required) {
@@ -20,6 +20,7 @@ export default class Form {
       }
     }
 
+    // Add submit event listener
     this.element.addEventListener('submit', this.onSubmit.bind(this));
   }
 
@@ -27,18 +28,17 @@ export default class Form {
     event.preventDefault();
 
     if (this.validate()) {
-      console.log('success');
+      console.log('Form submission successful');
       this.showConfirmation();
     } else {
-      console.log('fail');
+      console.log('Form validation failed');
     }
   }
 
   /**
-   *
+   * Validates the entire form
    * @return {boolean}
    */
-
   validate() {
     let isValid = true;
     for (let i = 0; i < this.formElements.length; i++) {
@@ -47,12 +47,16 @@ export default class Form {
         isValid = false;
       }
     }
-
     return isValid;
   }
 
-  validateInput(event) {
-    const input = event.currentTarget || event;
+  /**
+   * Validates a single input field
+   * @param {Event|HTMLInputElement} eventOrInput
+   * @return {boolean}
+   */
+  validateInput(eventOrInput) {
+    const input = eventOrInput.currentTarget || eventOrInput;
 
     if (input.validity.valid) {
       this.removeError(input);
@@ -64,31 +68,35 @@ export default class Form {
   }
 
   addError(input) {
-    const container =
-      input.closest('[data-input-container]') || input.closest('.input');
-    container.classList.add('error');
+    const container = input.closest('.form-group');
+    if (container) {
+      container.classList.add('error');
+    }
   }
 
   removeError(input) {
-    const container =
-      input.closest('[data-input-container]') || input.closest('.input');
-    container.classList.remove('error');
+    const container = input.closest('.form-group');
+    if (container) {
+      container.classList.remove('error');
+    }
   }
 
   showConfirmation() {
-    // Cache le formulaire
+    // Hide the form
     this.element.style.display = 'none';
 
-    // Crée un élément pour afficher le message de confirmation
+    // Create a confirmation message element
     const confirmationMessage = document.createElement('div');
-    confirmationMessage.classList.add('form__confirmation-message');
-    confirmationMessage.innerText = 'Votre formulaire a bien été envoyé !';
+    confirmationMessage.classList.add('form-confirmation');
+    confirmationMessage.innerText =
+      'Le formulaire à été envoyé! Je vous contacte sous peu. ';
 
-    // Ajoute le message après le formulaire
+    // Insert the confirmation message after the form
     this.element.parentElement.appendChild(confirmationMessage);
 
+    // Optional: Add a class for animations or styling
     setTimeout(() => {
       confirmationMessage.classList.add('active');
-    }, 100); // Délai de 100ms pour s'assurer que le message soit bien ajouté au DOM avant d'ajouter la classe
+    }, 100);
   }
 }

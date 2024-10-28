@@ -1,36 +1,234 @@
 {% include '_partials/_header.html' %}
 
-<section class="projets"></section>
+<section class="projets">
     <div class="wrapper">
-        <h2>Mes projets</h2>
-        
-        <div class="">
-            <div class="projets__content">
-                <article class="cards-projets">
-                    <div class="cards-media-projets">
-                        <img src="assets/images/card-projet-1.png" alt="" />
-                        <a class="btn btn_projet" href="">Click moi !</a>
-                        
-                    </div>
-                    <div class="cards-content-projets">
-                        <p>Projet étudiant <img src="assets/icons/separateur_rond.svg" alt="rond-separateur" /> 3D</p>
-                        <h4>La soucoupe volante</h4>
-                    </div>
-                </article>
-
-                <article class="cards-projets">
-                    <div class="cards-media-projets">
-                        <img src="assets/images/card-projet-2.png" alt="" />
-                        <a class="btn btn_projet" href="">Click moi !</a>
-                    </div>
-                    <div class="cards-content-projets">
-                        <p>Projet étudiant <img src="assets/icons/separateur_rond.svg" alt="rond-separateur" /> 3D</p>
-                        <h4>La soucoupe volante</h4>
-                    </div>
-                </article>
-            </div>
+        <div class="projets-title">
+            <h1>
+                Mes <br />
+                <span>projets</span>
+            </h1>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="projets-container">
+            <article class="projet-1 projet-gauche">
+                <div class="projet-image-web" data-scrolly="fromRight">
+                    <img class="img-hover" src="assets/images/card-projet-1.png" alt="projet-1" />
+                </div>
+                <div class="projet-content" data-scrolly="fromRight">
+                    <h2>Refonte Baie Sainte-Catherine</h2>
+                    <div class="projet-legende">
+                        <p>
+                            Projets étudiant <img src="assets/icons/separateur_rond.svg" alt="" />Design et intégration
+                            web
+                        </p>
+                    </div>
+                    <div class="description-projet">
+                        <p>
+                            Projet étudiant visant à faire la refonte du design et de l'intégration d'un site web déjà
+                            existant.
+                        </p>
+                    </div>
+                    <div class="boutton-suivant">
+                        <a
+                            class="cta cta-voir-projet"
+                            href="fiche_projet-1.html"
+                            title="Continue Reading"
+                            data-swiper-parallax="80"
+                            data-swiper-parallax-opacity="0.2"
+                            data-swiper-parallax-duration="1750"
+                        >
+                            Voir le projet
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="projet-2 projet-droite">
+                <div class="projet-content" data-scrolly="fromLeft">
+                    <h2>Prototype d'un portfolio en Php</h2>
+                    <div class="projet-legende">
+                        <p>
+                            Projets personnel <img src="assets/icons/separateur_rond.svg" alt="" />Intégration et
+                            programmation Php
+                        </p>
+                    </div>
+                    <div class="description-projet">
+                        <p>Projet personnel visant à créer une site web en Php utilisant WordPress.</p>
+                    </div>
+                    <div class="boutton-suivant">
+                        <a
+                            class="cta cta-voir-projet"
+                            href="fiche_projet-2.html"
+                            title="Continue Reading"
+                            data-swiper-parallax="80"
+                            data-swiper-parallax-opacity="0.2"
+                            data-swiper-parallax-duration="1750"
+                        >
+                            Voir le projet
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="projet-image-web" data-scrolly="fromRight">
+                    <img class="img-hover" src="assets/images/card-projet-2.png" alt="projet-2" />
+                </div>
+            </article>
+
+            <article class="projet-3 projet-gauche">
+                <div class="projet-image" data-scrolly="fromLeft">
+                    <img class="img-hover" src="assets/images/card-projet-3.png" alt="projet-3" />
+                </div>
+                <div class="projet-content" data-scrolly="fromRight">
+                    <h2>La soucoupe volante</h2>
+                    <div class="projet-legende">
+                        <p>Projets étudiant <img src="assets/icons/separateur_rond.svg" alt="" />Animation 3D</p>
+                    </div>
+                    <div class="description-projet">
+                        <p>Projet étudiant en animation 3D et en montage vidéo.</p>
+                    </div>
+                    <div class="boutton-suivant">
+                        <a
+                            class="cta cta-voir-projet"
+                            href="fiche_projet-3.html"
+                            title="Continue Reading"
+                            data-swiper-parallax="80"
+                            data-swiper-parallax-opacity="0.2"
+                            data-swiper-parallax-duration="1750"
+                        >
+                            Voir le projet
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="projet-4 projet-droite">
+                <div class="projet-content" data-scrolly="fromLeft">
+                    <h2>La course poursuite</h2>
+                    <div class="projet-legende">
+                        <p>Projets étudiant <img src="assets/icons/separateur_rond.svg" alt="" />Animation 3D</p>
+                    </div>
+                    <div class="description-projet">
+                        <p>Projet étudiant en animation 3D utilisant du rigging et en montage vidéo.</p>
+                    </div>
+                    <div class="boutton-suivant">
+                        <a
+                            class="cta cta-voir-projet"
+                            href="fiche_projet-4.html"
+                            title="Continue Reading"
+                            data-swiper-parallax="80"
+                            data-swiper-parallax-opacity="0.2"
+                            data-swiper-parallax-duration="1750"
+                        >
+                            Voir le projet
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="projet-image-droite" data-scrolly="fromRight">
+                    <img class="img-hover" src="assets/images/card-projet-4.png" alt="projet-4" />
+                </div>
+            </article>
+
+            <article class="projet-5 projet-gauche">
+                <div class="projet-image" data-scrolly="fromLeft">
+                    <img class="img-hover" src="assets/images/card-projet-5.png" alt="projet-5" />
+                </div>
+                <div class="projet-content" data-scrolly="fromRight">
+                    <h2>Zombie Attaque</h2>
+                    <div class="projet-legende">
+                        <p>
+                            Projets étudiant <img src="assets/icons/separateur_rond.svg" alt="" />Développement de
+                            jeu-vidéo
+                        </p>
+                    </div>
+                    <div class="description-projet">
+                        <p>Projet étudiant en jeu-vidéo avec un système de pointage et de survie.</p>
+                    </div>
+                    <div class="boutton-suivant">
+                        <a
+                            class="cta cta-voir-projet"
+                            href="fiche_projet-5.html"
+                            title="Continue Reading"
+                            data-swiper-parallax="80"
+                            data-swiper-parallax-opacity="0.2"
+                            data-swiper-parallax-duration="1750"
+                        >
+                            Voir le projet
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="video-presentation">
+    <div class="wrapper">
+        <div class="credit-footer">
+            <p>2024 Valois Justin © Tous droits réservés</p>
+        </div>
     </div>
 </section>
 

@@ -1,0 +1,63 @@
+/* ==========================================================================
+   video / component
+   ========================================================================== */
+
+.video-projet {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.video {
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.video-1 {
+    order: -1;
+    @media screen and (max-width: $breakpoint-sm) {
+        order: 0;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        order: 0;
+    }
+}
+.video__media {
+    @include cover();
+}
+
+.video-content-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    @media screen and (max-width: $breakpoint-sm) {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+}
