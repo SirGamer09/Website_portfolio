@@ -18,6 +18,7 @@
 
 .presentation-content p {
     font-size: var(--font-size-h1); /* Large main title */
+    font-family: var(--font-secondary);
 
     margin: 0;
     @media screen and (max-width: $breakpoint-md) {
